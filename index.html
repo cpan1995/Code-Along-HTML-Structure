@@ -7,30 +7,48 @@ Most recent revision:
 <html lang="en">
     <head>
         <title>Cheng's Portfolio</title>
+        <link href="teststyles.css" rel="stylesheet" type="text/css">
+        <style>
+            header {
+                background-color: darkgray;
+            }
+            body {
+                background-color: lightblue;
+            }
+            .border {
+                border: thick solid blue;
+            }
+
+            #experience {
+                border: thick dashed orange;
+            }
+        </style>
     </head>
     <body>
         <main>
             <header>
                 <h1>Portfolio for Cheng</h1>
             </header>
-            <hr>
+           
             <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-            <nav>
+            <nav class="border">
+                <hr style="border: thin dotted red;">
                 <p><a href="index.html">Home</a></p>
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
+                <hr style="width: 50%; border: 2px solid blueviolet;">
             </nav>
         
-            <hr>
+            
             <section>
-                <article id="about-me">
+                <article class="border" id="about" >
                     <h2><em>About Me</em></h2>
                     <img src="images/profile.jpg" alt="Portrait of Cheng Pan">
                     <p>TEST TEST TEST TEST TEST TEST TEST <strong>TEST TEST TEST TEST TEST</strong> TEST TEST TEST </p>
                     <p>TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST </p>
                 </article>
-                <article id="past-experience">
+                <article id="experience">
                     <h2><em>Past Experiences</em></h2>
                     <img src="images/profile.jpg" alt="experiences">
                     <table>
@@ -68,7 +86,7 @@ Most recent revision:
                         </ol>
                 </article>
             </section>
-            <footer>
+            <footer style="background-color: fuchsia">
                 <hr>
                 <p>&copy; 2020 Cheng Pan. All rights reserved.</p>
             </footer>
