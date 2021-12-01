@@ -8,19 +8,38 @@ Most recent revision:
     <head>
         <title>Cheng's Portfolio</title>
         <link href="teststyles.css" rel="stylesheet" type="text/css">
+        <link href="styles/main.css" rel="stylesheet" type="text/css">
         <style>
-            header {
-                background-color: darkgray;
-            }
-            body {
-                background-color: lightblue;
-            }
             .border {
                 border: thick solid blue;
             }
 
             #experience {
                 border: thick dashed orange;
+            }
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr {
+                height: 30px;
+            }
+            th {
+                background-color: #546a7b;
+                color: #f2eded;
+            }
+            tr:nth-child(even) {
+                background-color: #e4c3ad;
             }
         </style>
     </head>
@@ -31,13 +50,11 @@ Most recent revision:
             </header>
            
             <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-            <nav class="border">
-                <hr style="border: thin dotted red;">
+            <nav>
                 <p><a href="index.html">Home</a></p>
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
-                <hr style="width: 50%; border: 2px solid blueviolet;">
             </nav>
         
             
@@ -86,7 +103,7 @@ Most recent revision:
                         </ol>
                 </article>
             </section>
-            <footer style="background-color: fuchsia">
+            <footer>
                 <hr>
                 <p>&copy; 2020 Cheng Pan. All rights reserved.</p>
             </footer>
